@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{}
+\usepackage[T1]{fontenc}
+\title{Révision français}
+\author{Louis Hardy}
+\date{Mai 2019}
+
+\renewcommand{\baselinestretch}{0.2}
+
+\setlength{\hoffset}{-18pt}         
+\setlength{\oddsidemargin}{0pt} % Marge gauche sur pages impaires
+\setlength{\evensidemargin}{0pt} % Marge gauche sur pages paires
+\setlength{\marginparwidth}{54pt} % Largeur de note dans la marge
+\setlength{\textwidth}{481pt} % Largeur de la zone de texte (17cm)
+\setlength{\voffset}{-18pt} % Bon pour DOS
+\setlength{\marginparsep}{7pt} % Séparation de la marge
+\setlength{\topmargin}{0pt} % Pas de marge en haut
+\setlength{\headheight}{13pt} % Haut de page
+\setlength{\headsep}{4pt} % Entre le haut de page et le texte
+\setlength{\footskip}{27pt} % Bas de page + séparation
+\setlength{\textheight}{720pt} % Hauteur de la zone de texte (25cm)
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\section*{Springboard - Blog}
+https://www.springboard.com/blog/machine-learning-interview-questions/ \\
+\begin{enumerate}
+   \item Bias vs Variance
+   \begin{itemize}
+     \item \textbf{Bias} is due to erroneus or overly simplistic assumptions in learning algorithm
+     \item Usually underfitting your data
+     \item \textbf{Variance} typically due to too much complexity in learning algorithm
+     \item Makes the model sensitive to high degrees of variation in training data. 
+     \item Too much noise from training data
+     \item If you make data more complex and add more variables, you'll lose bias but gain variance. 
+   \end{itemize}
+   \item Supervised vs Unsupervised learning
+   \begin{itemize}
+       \item Supervised requires labeled data. Unsupervised does not. 
+    \end{itemize}
+    \item How is KNN different from k-means clustering?
+    \begin{itemize}
+        \item KNN is a supervised classification algorithm. 
+        \item K-means clustering is unsupervised. 
+        \item Works very similarly
+        \item KNN required labelled data 
+        \item K means clustering requires only a set of unlabeled point and a threshold
+        \item The algorithm will gradually \textit{learn} how to cluster them by computing mean of the distance between different points.
+    \end{itemize}
+    \item How does a ROC curve work
+    \begin{itemize}
+      \item graphical representation of constrast between true and false positive rate at various threholds. 
+      \item Used as a proxy for trade-off between sensitivity of model (true positive) vs the fall-out or probability it will trigger a false alarm (false positives)
+      
+    \end{itemize}
+\end{enumerate}
+\noindent\hrulefill
+
+\end{document}
