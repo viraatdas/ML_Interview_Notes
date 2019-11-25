@@ -48,13 +48,49 @@ https://www.springboard.com/blog/machine-learning-interview-questions/ \\
         \item Works very similarly
         \item KNN required labelled data 
         \item K means clustering requires only a set of unlabeled point and a threshold
-        \item The algorithm will gradually \textit{learn} how to cluster them by computing mean of the distance between different points.
+        \item The algorithm will gradually \textit{learn} how to cluster them by computing mean of the 
+              distance between different points.
     \end{itemize}
     \item How does a ROC curve work
     \begin{itemize}
-      \item graphical representation of constrast between true and false positive rate at various threholds. 
-      \item Used as a proxy for trade-off between sensitivity of model (true positive) vs the fall-out or probability it will trigger a false alarm (false positives)
-      
+      \item graphical representation of constrast between true and false positive rate at various 
+            threholds. 
+      \item Used as a proxy for trade-off between sensitivity of model (true positive) vs the 
+            fall-out or probability it will trigger a false alarm (false positives)
+      \item Think about recall and precision in this case.
+        \begin{itemize}
+          \item \textit{ex. } You'd have perfect recall (there are actually 10 apples, and you 
+                predicted there would be 10) but $66.7\%$ precision because out of the 15 events 
+                you precited, only 10 (the apples) are correct.
+        \end{itemize}
+    \end{itemize}
+    \item  Baye's Theorem?
+    \begin{itemize}
+      \item $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
+      \item Leads to a branch of ML called Naive Bayes classifier
+    \end{itemize}
+    \item Why is "Naive" Bayes naive?
+    \begin{itemize}
+      \item Used a lot in text mining
+      \item It's naive because it makes an assumption that is virtually impossible in real-life data. 
+      \begin{itemize}
+        \item conditional probability is calculated as the pure product of the individial probabilities of components.
+        \item This implies absolute independence of features - condition probably never met in real life.
+      \end{itemize}
+      \item Anohter way put, if a Naive Bayes classifier figured that you liked pickles and ice-cream 
+            would probably naively recommend you a pickle ice-cream.
+    \end{itemize}
+    \item Difference between L1 and L2 regularization
+    \begin{itemize}
+      \item Regularization helps solve over-fitting problems in ML
+      \item Simple model will be very poor generalization of data. 
+      \item Complex model may not perform well in test due to over-fitting.
+      \item Regulatization refers to adding a penalty term to objective function and control model complexity using 
+            that penalty term. 
+      \item Ridge regression used $L_2$ norm for regularization.
+      \begin{itemize}
+        \item 
+      \end{itemize}
     \end{itemize}
 \end{enumerate}
 \noindent\hrulefill
