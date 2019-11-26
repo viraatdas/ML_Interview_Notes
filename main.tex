@@ -81,7 +81,7 @@ https://www.springboard.com/blog/machine-learning-interview-questions/ \\
             would probably naively recommend you a pickle ice-cream.
     \end{itemize}
     \item Difference between L1 and L2 regularization
-    \begin{itemize}
+    \begin{itemize} % 7
       \item Regularization helps solve over-fitting problems in ML
       \item Simple model will be very poor generalization of data. 
       \item Complex model may not perform well in test due to over-fitting.
@@ -89,9 +89,95 @@ https://www.springboard.com/blog/machine-learning-interview-questions/ \\
             that penalty term. 
       \item Ridge regression used $L_2$ norm for regularization.
       \begin{itemize}
-        \item 
+        \item Ridge regression is used to analyze techniques that suffer from multicollinearity.
+        \item When multicollinearity occurs, least squares estimates are unbiased, but variances are large so they might
+              be far from true value.
+      \end{itemize}
+      \item L2 forces weights to be small but does not make them zero 
+            and does non sparse solution
+      \item Lasso regression uses L1 regression
+      \begin{itemize}
+        \item Type of linear regression that uses shrinkage. 
+        \item Shrinkage is where data values are \textit{shrunk} towards 
+              a central point, like the mean.
+        \item Creates simple sparse models (models with fewer parameters)
+      \end{itemize}
+      \item Main difference between L1 and L2 is the difference between the constraint
+            region. 
+    \end{itemize}
+    \item Favorite algorithm
+    \begin{itemize}
+      \item Optical flow is pattern of apparent motion of objects, surfaces, 
+            and edges caused by the relative motion between an observer and 
+            a scene. 
+      \item Optical flow methods try to calculate motion between between two 
+            images which are taken at times $t$ and $t + \Delta t$ at every
+            voxel position. 
+      \item This sort of method are called differential since they are based 
+            on local Taylor Series.
+      \item They use partial derivatives with respect to spatial and temporal 
+            coordinates. 
+    \end{itemize}
+    \item Difference between Type I and Type II error?
+    \begin{itemize}
+      \item Type I error is rejection of true null hypothesis ("false" positive)
+      \item Type II error is not rejective the false null hypothesis 
+    \end{itemize}
+    \item Fourier Transform
+    \begin{itemize}
+      \item Converts signal from time to frequency domain
+      \item Decomposes generic function into a superposition of symmetric 
+            function.
+    \end{itemize}
+    \item Probability vs Likelihood [Need to expand]
+    \begin{itemize}
+      \item Probability attaches to possible results
+      \item Likelihood attaches to hypothesis
+    \end{itemize}
+    \item Difference between generative and discriminative model
+    \begin{itemize}
+      \item Generative model will learn categories of data
+      \item Discriminative will simply learn the different categories 
+            of data.
+      \item Discriminative will generally outperform generative models 
+            on classification tasks.
+    \end{itemize}
+    \item What CV technique would you use on time-series dataset
+    \begin{itemize}
+      \item Time series is not randomly distributed but 
+            but chronologically ordered.
+      \item Forward chaining is one way of doing this
+      \begin{itemize}
+        \item In time series CV each day is a test data and the 
+              previous day's data is the training set.  \\
+        \includegraphics[width=10cm]{forward_chaining.png} \\
+        \item We start training the model with a minimum number 
+              of observations and use the next day's data to 
+              test the model and we keep moving through the data 
+              set. 
       \end{itemize}
     \end{itemize}
+  \item Decision tree pruned
+  \begin{itemize}
+    \item Pruning is what happens in decision trees when branches 
+          that have weak predictive power are remove.
+    \item This reduces model complexity and increases predictive 
+          accuracy of a decision tree model. 
+    \item Reduced error pruning is simplest version
+    \begin{itemize}
+      \item replace each
+      \item if it doesn't decrease predictive accuracy, keep it 
+            pruned.
+    \end{itemize}
+  \item What is more important to you - model accuracy or model 
+        performance?
+    \begin{itemize}
+      \item Accuracy paradox
+      \item A simple model may have a high level of accuracy but 
+            be too crude to be useful
+      \item 
+    \end{itemize}
+  \end{itemize}
 \end{enumerate}
 \noindent\hrulefill
 

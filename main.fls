@@ -74,6 +74,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 OUTPUT /Users/owner/Documents/GitHub/ML_Interview_Notes/main.pdf
 INPUT /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /Users/owner/Documents/GitHub/ML_Interview_Notes/forward_chaining.png
+INPUT /Users/owner/Documents/GitHub/ML_Interview_Notes/forward_chaining.png
+INPUT /Users/owner/Documents/GitHub/ML_Interview_Notes/forward_chaining.png
 INPUT /Users/owner/Documents/GitHub/ML_Interview_Notes/main.aux
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
