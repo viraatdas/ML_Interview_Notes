@@ -175,10 +175,66 @@ https://www.springboard.com/blog/machine-learning-interview-questions/ \\
       \item Accuracy paradox
       \item A simple model may have a high level of accuracy but 
             be too crude to be useful
-      \item 
+      \item If you have a large dataset to detect fraud and majority 
+            of it are not-fraud data points, the probability of the 
+            model detecting fraud is a lot lower. 
+      \item model designed to find fraud that asserted there was no 
+            fraud at all. 
     \end{itemize}
+  \end{itemize}
+  \item F1 score
+  \begin{itemize}
+    \item F1 score is measure of model's performance
+    \item Weighted average of precision and recall of a 
+          model, with results tending to 1 being the best 
+          and those tending to 0 being the worst.
+    \item Used in classification tests where true negatives 
+          don't matter much. 
+  \end{itemize}
+  \item How to handle an imbalanced dataset?
+  \begin{itemize}
+    \item Imbalanced dataset is when 90\% of the data is in one 
+          class
+    \item this accuracy can lead to a skewed of one prediction class
+    \item These are ways to get over the hump
+    \begin{itemize}
+      \item Collect more data to even the imbalances in the dataset
+      \item Resample dataset to correct for imbalances
+      \item Try a different algorithm on your dataset
+    \end{itemize}
+  \end{itemize}
+  \item When should you use classification over regression?
+  \begin{itemize}
+    \item Classification produces discrete values. 
+    \item Regression is continuous
+    \item Seeing if a name is male or female vs how correlated 
+          they were with male and female names.
+  \end{itemize}
+  \item Example where ensemble techniques might be useful
+  \begin{itemize}
+    \item Ensemble technique uses a combination of learning 
+          algorithms to optimize better predictive performance. 
+    \item Typically reduces overfitting in models and and makes model 
+          more robust (unlikely to be influence by small changes in 
+          the training data).
+    \item \textit{ex. } bagging
   \end{itemize}
 \end{enumerate}
 \noindent\hrulefill
+
+\section*{Building a recommendation system}
+\begin{enumerate}
+  \item Simply put, the engine computes the co-occurrence matrix
+        from a history matrix of events and actions. 
+  \item Then, we have to apply statistics to filter out the 
+        sufficiently anomalous signals to be interesting as a 
+        recommendation.
+  \item We need to be able to extract \textbf{relevant indicators} 
+        from the co-occurrence matrix. This is what makes a good 
+        recommendation system.
+  \item Creating an item-to-item indicator matrix is called an 
+        \textbf{item-item model}. Another one is a \textbf{user-item model}.
+  \item   
+\end{enumerate}
 
 \end{document}
