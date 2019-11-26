@@ -234,7 +234,32 @@ https://www.springboard.com/blog/machine-learning-interview-questions/ \\
         recommendation system.
   \item Creating an item-to-item indicator matrix is called an 
         \textbf{item-item model}. Another one is a \textbf{user-item model}.
-  \item   
+  \begin{itemize}
+    \item [Expand on item-item and user-item]
+  \end{itemize}
+  \item To create user-item model we could apply a simple matrix 
+        factorisation.
+  \begin{itemize}
+    \item Class of collaborative filtering
+    \item Works by decomposing the user-item interaction matrix 
+          into the product of two lower dimensionality rectangular 
+          matrices.
+  \end{itemize}
+  \item Another way is to train a neural network to predict the scores of 
+        a user-item input.
+  \item Usually item-item models are more robust and produce better 
+        results when we don't invest into feature engineering and model tuning
+  \item Recommending same things over and over is bad and produces 
+        \textbf{content fatigue}
+  \item There are two ways to improve the values:
+  \begin{itemize}
+    \item Anti-Flood: Penalize the second and third recommendations if 
+          they have the same similarity scores to the top recommendation.
+    \item Dithering: Add a wildcard recommendation to create interesting 
+          new data points for the recommendation to keep learning about 
+          other content. 
+    
+  \end{itemize}
 \end{enumerate}
 
 \end{document}
